@@ -1,0 +1,71 @@
+:root {
+    --text: darkslateblue;
+    --white: #FFF;
+    --border-btn: 14px;
+    --white-text: #C0C0C0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--white);
+    height: 90px;
+}
+
+body{
+    background-color: lavenderblush;
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--text);
+    font-size: xxx-large;
+    margin: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--white);
+    padding: 11px 20px 13px;
+    color: var(--text);
+    position: relative;
+    letter-spacing: 0.4px;
+    border-radius: var(--border-btn);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate {
+    animation: bounce 1s infinite;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
